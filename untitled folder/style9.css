@@ -1,0 +1,214 @@
+            :root {
+                min-height: 100%;
+            }
+           
+            #main {
+                text-align: center;
+                font-family: Arial, Helvetica, sans-serif;
+                color: white;
+                margin: auto;
+                max-width: 1200px;
+                margin-top: 100px;
+            }
+            .glass {
+                background: rgba(255, 255, 255, 0.25);
+                border-radius: 25px;
+                border: 2px solid rgba(255, 255, 255, 0.1);
+            }
+            .bio-card {
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+                padding: 6px;
+                margin: 10px;
+                align-items: center;
+            }
+            #img-div {
+                display: flex;
+                flex-direction: column;
+                box-sizing: border-box;
+                justify-items: center;
+                align-items: center;
+                flex: 0.5;
+                padding: 8px;
+                margin: 10px;
+            }
+            #image {
+                max-width: 100%;
+                height: auto;
+                border-radius: 25px;
+            }
+            #img-caption {
+                color: white;
+                font-size: 16px;
+                margin: 8px;
+                margin-top: 12px;
+            }
+            .text-card {
+                padding: 6px;
+                margin: 10px;
+            }
+            .title-card {
+                padding: 3px;
+                margin: 10px;
+                color: white;
+                letter-spacing: 35px;
+                text-transform: uppercase;
+                
+            }
+            #title {
+                font-weight: 900;
+                font-size: 29px;
+            }
+            #intro-quote {
+                font-style: italic;
+                color:#9557d3;
+                font-size: 14px;
+                margin: 1px;
+            }
+            .bio-card #tribute-info{
+                max-width: fit-content;
+                text-align: justify;
+                padding: 0px 35px;
+                margin: 6px 0px;
+                font-size: 16px;
+            }
+            .bio-card p:nth-child(3) {
+                margin-top: 14px;
+            }
+            .bio-card p:last-child {
+                margin-bottom: 10px;
+            }
+            .bio-card h2 {
+                text-transform: uppercase;
+                letter-spacing: 6px;
+                margin: 8px;
+            }
+            #no-space {
+                letter-spacing: 0px;
+            }
+            .row {
+                display: flex;
+                flex-direction: row;
+            }
+            .column {
+                display: flex;
+                flex-direction: column;
+                flex: 1;
+                align-content: center;
+            }
+            .sub-column {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex: 1;
+            }
+            #sub-title {
+                text-align: left;
+                text-transform: uppercase;
+                letter-spacing: 6px;
+                margin: 8px;
+            }
+            .button {
+                border-radius: 20px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                margin: 2px;
+                background: radial-gradient(circle farthest-corner at right, #55Bf91 1%, transparent),             
+                            radial-gradient(circle farthest-corner at left, #58B7A2 10%, #57BB98);
+            }
+            .drop-box {
+                display: flex;
+                flex-direction: column;
+                flex: content;
+                align-items: center;
+                margin: 0px 0px 10px 0px;
+                box-sizing: border-box;
+                max-height: 100%;
+                background: rgba(255, 255, 255, 0);
+                border-radius: 25px;
+                border: 2px solid rgba(255, 255, 255, 0);
+                color:rgba(255, 255, 255, 0)
+            }
+            .drop-box p{
+                font-size: 16px;
+                padding: 15px 18px 18px 15px;
+                margin: 0px;
+                text-align: justify;
+            }
+            .drop-box p:last-of-type {
+                padding-bottom: 15px;
+            }
+            .drop-box:hover {
+                animation-name: drop-box;
+                animation-duration: 500ms;
+                animation-iteration-count: 1;
+                animation-fill-mode: both;
+            }
+            @keyframes drop-box {
+                0% {
+                    background: rgba(255, 255, 255, 0);
+                    border: 2px solid rgba(255, 255, 255, 0);
+                    color:rgba(255, 255, 255, 0)
+                }
+                100% {
+                    background: rgba(255, 255, 255, 0.25);
+                    border: 2px solid rgba(255, 255, 255, 0.1);
+                    color:rgba(255, 255, 255, 1)
+                }
+            }
+            #tribute-link {
+                display: flex;
+                justify-content: center;
+                align-self: flex-end;
+                box-sizing: border-box;
+                background: radial-gradient(circle farthest-corner at right, #689EB8, transparent), radial-gradient(circle farthest-corner at left,#7B80BC 10%,#7190BA);
+                color:rgba(255, 255, 255, 1);
+                border-radius: 25px;
+                border: 2px solid rgba(255, 255, 255, 0);
+                background-clip: content-box;
+            }
+            #tribute-link:active {
+                animation-name: drop-box-2;
+                animation-duration: 100ms;
+                animation-iteration-count: 1;
+                animation-fill-mode: both;                  
+            }
+            @keyframes drop-box-2 {
+                0% {
+                    background: rgba(255, 255, 255, 0.5);
+                    border: 2px solid rgba(255, 255, 255, 0.3);
+                }
+                100% {
+                    background: rgba(255, 255, 255, 0.25);
+                    border: 2px solid rgba(255, 255, 255, 0.1);
+                }
+            }
+            a {
+                text-decoration: none;
+            }
+            #tribute-link p {
+                font-size: 16px;
+                padding: 15px 20px 15px 20px;
+                margin: 0px;
+                text-align: justify;
+            }
+            #button-text {
+                text-transform: uppercase;
+                letter-spacing: 0px;
+                padding: 4px;
+                margin-top: 1px;
+                margin-bottom: 1px;
+                color: rgba(255, 255, 255, 1);
+            }
+            ul {
+                text-align: left;
+                list-style-type: none;
+                padding: 8px;
+                margin: 4px;
+                font-size: 16px;
+            }
+            li {
+                margin: 6px;
+            }

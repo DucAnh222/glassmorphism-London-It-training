@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+h6 {
+
+  font-family: 'Roboto', sans-serif;
+
+  font-size: 20px;
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+  background: #323445;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+h6:after {
+
+  content: '';
+
+  background: linear-gradient(to right, #FBFF00, #FF004A);
+
+  position: absolute;
+
+  height: 100%;
+
+  width: 100%;
+
+  top: 0;
+
+  left: 0;
+
+  clip-path: circle(26% at right 30%);
+
+  z-index: -1;
+
+}
+
+h6:before {
+
+  content: '';
+
+  background: linear-gradient(to right, #00FFF7, #0043FF);
+
+  position: absolute;
+
+  height: 100%;
+
+  width: 100%;
+
+  top: 0;
+
+  left: 0;
+
+  clip-path: circle(10% at 10% 10%);
+
+  z-index: -1;
+
+}
+
+section {
+
+  background: rgba(255, 255, 255, 0.2);
+
+  height: 650px;
+
+  width: 600px;
+
+  margin: 60px auto;
+
+  padding: 20px;
+
+  backdrop-filter: blur(6px);
+
+  border-radius: 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+
+  color: rgba(255, 255, 255, 0.9);
+
+  box-shadow: 10px 20px 50px rgba(0,0,0,0.4)
+
+}
+
+.formbox {
+
+  width: 100%;
+
+  position: relative;
+
+  margin-top: 50px;
+
+}
+
+.content0 {
+
+  display: flex;
+
+  gap: 20px;
+
+}
+.content1 {
+
+    display: flex;
+  
+    gap: 20px;
+  
+  }
+
+.inputbox {
+
+  display: flex;
+
+  flex-direction: column;
+
+  width: 50%;
+
+}
+
+.content2 .inputbox {
+
+  width: 100%
+
+}
+
+input {
+
+  height: 40px;
+
+  margin-bottom: 20px;
+
+  border: none;
+
+  outline-color: none;
+
+  padding-left: 10px;
+
+  font-family: 'roboto';
+
+  font-weight: bold;
+
+  background: rgba(255, 255, 255, 0.4);
+
+  backdrop-filter: blur(5px);
+
+  border-radius: 10px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+
+  
+
+}
+
+::placeholder {
+
+  font-weight: 300;
+
+  color : #404142;
+
+}
+
+textarea {
+
+  height: 150px;
+
+  margin-bottom: 30px;
+
+  padding-top: 10px ;
+
+  padding-left: 10px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+
+  background: rgba(255, 255, 255, 0.4);
+
+  font-weight: bold;
+
+  border-radius: 10px;
+
+}
+
+.btn {
+
+  width: 150px;
+
+  background: #FF004D;
+
+  border: none;
+
+  color: #FFFFFF;
+
+  font-family: 'roboto';
+
+  outline: none;
+
+}
+
+span {
+
+  margin-bottom: 10px;
+
+  color: #fff
+
+}
+
+.icon {
+
+  text-align: center;
+
+  color : #fff;
+
+  font-size: 40px;
+
+}
+
+ion-icon {
+
+  padding: 20px
+
+}
+
+h1{
+
+  position: relative;
+
+  color: #fff
+
+}
+
+h1:before {
+
+  content: '';
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -10px;
+
+  width: 100px;
+
+  height: 5px;
+
+  background: #fff
+
+}
+
+.animate .squire {
+
+  backdrop-filter: blur(6px);
+
+  border-radius: 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.8);
+
+  border-left: 1px solid rgba(255, 255, 255, 0.8);
+
+  color: rgba(255, 255, 255, 0.9);
+
+  box-shadow: 10px 20px 50px rgba(0,0,0,0.1);
+
+  background: rgba(255, 255, 255, 0.2);
+
+  position: absolute;
+
+  animation: animate 6s linear infinite;
+
+} 
+
+.squire:nth-child(1) {
+
+  top: 10px;
+
+  right: 90px;
+
+  width: 100px;
+
+  height: 100px;
+
+  animation-delay: -1s
+
+}
+
+.squire:nth-child(2) {
+
+  top: 600px;
+
+  left: 90px;
+
+  width: 200px;
+
+  height: 150px;
+
+  z-index: -1;
+
+  animation-delay: -2s;
+
+}
+
+.squire:nth-child(3) {
+
+  top: 710px;
+
+  left: 720px;
+
+  width: 200px;
+
+  height: 150px;
+
+  z-index: 1
+
+}
+
+@keyframes animate {
+
+  0%,100% {
+
+    transform: translateY(-40%)
+
+  }
+
+  50% {
+
+    transform: translateY(40%)
+
+  }
+
+}
